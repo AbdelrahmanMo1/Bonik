@@ -1,0 +1,13 @@
+.flash-box{
+    box-shadow: rgb(3 0 71 / 20%) 0 1px 3px ;
+}
+.flash-box:hover .like{
+    opacity: 1;
+    transition:opacity .5s;
+}
+
+.flash-box .name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

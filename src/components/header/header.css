@@ -1,0 +1,151 @@
+nav{
+  height: 8vh;
+  box-shadow: -1px 15px 17px -5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.nav-links .nav-link{
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #33415c;
+  transition: .3s linear;
+}
+
+.nav-links li:not(:last-child){
+  margin-right: 15px;
+}
+
+.nav-links .nav-link:hover{
+  color: #6c757d;
+}
+
+/*** toggle menu ***/
+
+.toggle {
+  display: none;
+  width: 50px;
+  height: 40px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #33415c;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.toggle span:nth-child(2) {
+  top: 10px;
+}
+
+.toggle span:nth-child(3) {
+  top: 20px;
+}
+
+.toggle.open span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+
+.toggle.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.toggle.open span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+
+/*** search active ***/
+.search.active{
+  height: 9vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: -1px 15px 17px -5px rgba(0, 0, 0, 0.1);
+  transition: .5s;
+  z-index: 1000;
+}
+
+
+@media (max-width:991px) {
+  .toggle{
+    display: block;
+  }
+  
+  .nav-links{
+    display: none;
+  }
+
+  .nav-links.open{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 40px;
+    background-color: #33415c;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    transition: height .5s;
+    z-index: 100;
+  }
+
+  .nav-links.open li:not(:last-child){
+    margin-bottom: 20px;
+  }
+
+  .nav-links .nav-link{
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    color: #fff;
+  }
+
+  .nav-links .nav-link:hover{
+    color: #ced4da;
+  }
+}
+
+@media (max-width:650px) {
+  .header{
+    justify-content: center;
+  }
+  .header .language{
+    display: none;
+  }
+}
+
+@media (max-width:480px) {
+  .btn-category{
+    font-size: 20px;
+  }
+  .toggle {
+    margin-top: 4px;
+    width: 40px;
+  }
+}

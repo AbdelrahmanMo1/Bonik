@@ -1,0 +1,12 @@
+@media (max-width:991px) {
+
+  .cart{
+    flex-direction: column;
+  }
+  .cart .cart-item{
+    width: 100%;
+  }
+  .cart .summary{
+    width: 100%;
+  }
+}

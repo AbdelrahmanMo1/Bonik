@@ -1,0 +1,66 @@
+const Data = [
+  {
+    id: 1,
+    image: require("./imgs/discount-1.png"),
+    name: "BenuX 2022",
+    price: "$250",
+    oldPrice: "$300",
+  },
+  {
+    id: 2,
+    image: require("./imgs/discount-2.png"),
+    name: "Sony TV 1080p",
+    price: "$450",
+    oldPrice: "$520",
+  },
+  {
+    id: 3,
+    image: require("./imgs/discount-3.png"),
+    name: "Sony PS4",
+    price: "$50",
+    oldPrice: "$70",
+  },
+  {
+    id: 4,
+    image: require("./imgs/discount-4.png"),
+    name: "Setgearr 2022",
+    price: "$100",
+    oldPrice: "$150",
+  },
+  {
+    id: 5,
+    image: require("./imgs/discount-5.png"),
+    name: "Tony BGB",
+    price: "$20",
+    oldPrice: "$28",
+  },
+  {
+    id: 6,
+    image: require("./imgs/discount-6.png"),
+    name: "RG products",
+    price: "$200",
+    oldPrice: "$260",
+  },
+  {
+    id: 7,
+    image: require("./imgs/discount-7.png"),
+    name: "Ranasonic 2022",
+    price: "$300",
+    oldPrice: "$330",
+  },
+  {
+    id: 8,
+    image: require("./imgs/discount-8.png"),
+    name: "Pune HD",
+    price: "$30",
+    oldPrice: "$40",
+  },
+  {
+    id: 9,
+    image: require("./imgs/discount-9.png"),
+    name: "Sony CCTV",
+    price: "$80",
+    oldPrice: "$85",
+  },
+];
+export default Data;

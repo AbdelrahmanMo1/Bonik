@@ -1,0 +1,12 @@
+.discount .name {
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+@media (max-width:1050px) {
+  .discount h3{
+    font-size: 18px;
+  }
+}
